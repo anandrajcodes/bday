@@ -1,0 +1,1062 @@
+/* =========================================
+   RESET
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    -webkit-text-size-adjust:100%;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #050816,
+        #0f1c4d,
+        #1b2d70
+    );
+
+    color:white;
+
+    overflow:hidden;
+
+    min-height:100dvh;
+
+}
+
+/* =========================================
+   STARRY BACKGROUND
+========================================= */
+
+#stars{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background-image:
+
+        radial-gradient(circle,#ffffff 1.5px,transparent 1.5px),
+
+        radial-gradient(circle,#ffffff 1px,transparent 1px);
+
+    background-size:
+
+        120px 120px,
+
+        180px 180px;
+
+    opacity:.35;
+
+    animation:twinkle 5s infinite alternate;
+
+}
+
+@keyframes twinkle{
+
+from{
+
+opacity:.2;
+
+}
+
+to{
+
+opacity:.5;
+
+}
+
+}
+
+/* =========================================
+   SCENES
+========================================= */
+
+.scene{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transform:scale(.96);
+
+    transition:.6s;
+
+}
+
+.scene.active{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+    transform:scale(1);
+
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card{
+
+    width:min(92%,420px);
+
+    padding:30px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,.35);
+
+}
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1{
+
+    font-family:"Great Vibes";
+
+    font-size:clamp(3rem,9vw,4.5rem);
+
+    color:#FFD166;
+
+}
+
+h2{
+
+    margin-top:12px;
+
+    font-size:1.7rem;
+
+}
+
+h3{
+
+    margin-top:25px;
+
+    color:#ffe89a;
+
+}
+
+p{
+
+    margin-top:25px;
+
+    line-height:1.8;
+
+    color:#ececec;
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button{
+
+    width:100%;
+
+    margin-top:35px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#ff4f87;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 10px 30px rgba(255,79,135,.4);
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+/* =========================================
+   PROGRESS DOTS
+========================================= */
+
+#progress{
+
+    position:fixed;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:10px;
+
+    z-index:100;
+
+}
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.25);
+
+}
+
+.dot.active{
+
+    background:#FFD166;
+
+    box-shadow:
+
+        0 0 12px #FFD166;
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+.card{
+
+    width:92%;
+
+    padding:24px;
+
+}
+
+button{
+
+    padding:15px;
+
+}
+
+}
+
+/* =========================================
+   GIFT SCENE
+========================================= */
+
+#gift{
+
+    font-size:120px;
+
+    cursor:pointer;
+
+    margin-top:30px;
+
+    transition:.35s;
+
+    user-select:none;
+
+    filter:drop-shadow(0 8px 20px rgba(255,215,0,.35));
+
+}
+
+#gift:hover{
+
+    transform:scale(1.08);
+
+}
+
+#gift.open{
+
+    animation:giftOpen .8s ease;
+
+}
+
+@keyframes giftOpen{
+
+0%{
+
+transform:scale(1);
+
+}
+
+30%{
+
+transform:scale(1.15) rotate(-8deg);
+
+}
+
+60%{
+
+transform:scale(.95) rotate(8deg);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+#giftMessage{
+
+    min-height:90px;
+
+    margin-top:25px;
+
+    font-size:1rem;
+
+}
+
+#giftNext{
+
+    display:none;
+
+}
+
+/* =========================================
+   LETTER
+========================================= */
+
+#letter{
+
+    width:100%;
+
+    min-height:220px;
+
+    margin-top:25px;
+
+    background:#fffdf7;
+
+    color:#444;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    text-align:left;
+
+    line-height:1.9;
+
+    font-size:.95rem;
+
+    box-shadow:
+
+        0 15px 30px rgba(0,0,0,.25);
+
+}
+
+#letter::before{
+
+    content:"💌";
+
+    display:block;
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+#letterNext{
+
+    display:none;
+
+}
+
+/* =========================================
+   CAKE
+========================================= */
+
+#cake{
+
+    font-size:130px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    margin-top:20px;
+
+    user-select:none;
+
+}
+
+#cake:hover{
+
+    transform:scale(1.08);
+
+}
+
+#cake.cut{
+
+    animation:cakeCut .7s ease;
+
+}
+
+@keyframes cakeCut{
+
+0%{
+
+transform:scale(1);
+
+}
+
+40%{
+
+transform:rotate(-5deg);
+
+}
+
+70%{
+
+transform:rotate(5deg);
+
+}
+
+100%{
+
+transform:rotate(0);
+
+}
+
+}
+
+#cakeNext{
+
+    display:none;
+
+}
+
+/* =========================================
+   WISH STARS
+========================================= */
+
+#wishBox{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:25px;
+
+}
+
+.wish{
+
+    width:100%;
+
+    padding:18px;
+
+    font-size:34px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:18px;
+
+}
+
+.wish:hover{
+
+    transform:scale(1.08);
+
+}
+
+.wish.opened{
+
+    background:#FFD166;
+
+    color:#222;
+
+}
+
+#wishText{
+
+    min-height:90px;
+
+}
+
+#wishNext{
+
+    display:none;
+
+}
+
+/* =========================================
+   FINAL CARD
+========================================= */
+
+.final{
+
+    z-index:5;
+
+}
+
+.final h1{
+
+    animation:titleGlow 2s infinite alternate;
+
+}
+
+@keyframes titleGlow{
+
+from{
+
+text-shadow:0 0 8px #FFD166;
+
+}
+
+to{
+
+text-shadow:
+
+0 0 25px #FFD166,
+
+0 0 45px #FFD166;
+
+}
+
+}
+
+/* =========================================
+   FIREWORK CANVAS
+========================================= */
+
+#fireworks{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+#hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.heart{
+
+    position:absolute;
+
+    font-size:20px;
+
+    animation:heartFloat linear forwards;
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:
+
+translateY(0)
+
+scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+
+translateY(-220px)
+
+scale(1.4);
+
+opacity:0;
+
+}
+
+}
+
+/* =========================================
+   CONFETTI
+========================================= */
+
+#confetti{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.confetti-piece{
+
+    position:absolute;
+
+    width:8px;
+
+    height:18px;
+
+    border-radius:3px;
+
+    animation:fall 2.5s linear forwards;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+
+translateY(-20px)
+
+rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+
+translateY(900px)
+
+rotate(720deg);
+
+opacity:0;
+
+}
+
+}
+/* =========================================
+   PART 2C
+   SPARKLES
+========================================= */
+
+.sparkle{
+
+    position:absolute;
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:#FFD166;
+
+    box-shadow:
+        0 0 10px #FFD166;
+
+    animation:sparkle 1.6s linear forwards;
+
+}
+
+@keyframes sparkle{
+
+    0%{
+
+        opacity:1;
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            scale(.2)
+            translateY(-120px);
+
+    }
+
+}
+
+/* =========================================
+   SHOOTING STAR
+========================================= */
+
+.shooting-star{
+
+    position:absolute;
+
+    width:140px;
+
+    height:2px;
+
+    background:
+        linear-gradient(
+            to right,
+            white,
+            transparent
+        );
+
+    transform:rotate(-25deg);
+
+    animation:shoot 1.5s linear forwards;
+
+}
+
+@keyframes shoot{
+
+    from{
+
+        transform:
+            translate(-150px,-100px)
+            rotate(-25deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+            translate(600px,450px)
+            rotate(-25deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* =========================================
+   MAGIC GLOW
+========================================= */
+
+.glow{
+
+    animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        filter:
+
+            drop-shadow(0 0 6px white);
+
+    }
+
+    to{
+
+        filter:
+
+            drop-shadow(0 0 18px #FFD166);
+
+    }
+
+}
+
+/* =========================================
+   FLOAT ANIMATION
+========================================= */
+
+.float{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+/* =========================================
+   FADE IN
+========================================= */
+
+.fade-in{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* =========================================
+   SCALE IN
+========================================= */
+
+.scale-in{
+
+    animation:scaleIn .5s ease;
+
+}
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            scale(1);
+
+    }
+
+}
+
+/* =========================================
+   HIDE / SHOW
+========================================= */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.show{
+
+    display:block;
+
+}
+
+/* =========================================
+   FINAL MESSAGE
+========================================= */
+
+.final p{
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+}
+
+.final h3{
+
+    margin-top:30px;
+
+    color:#FFD166;
+
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar{
+
+    width:0;
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:480px){
+
+    h1{
+
+        font-size:3.2rem;
+
+    }
+
+    h2{
+
+        font-size:1.5rem;
+
+    }
+
+    p{
+
+        font-size:.95rem;
+
+    }
+
+    #gift{
+
+        font-size:100px;
+
+    }
+
+    #cake{
+
+        font-size:110px;
+
+    }
+
+    .wish{
+
+        font-size:28px;
+
+        padding:15px;
+
+    }
+
+}
+
+/* Memory Photo */
+
+.memory-photo{
+
+    width:220px;
+
+    max-width:80%;
+
+    margin-top:25px;
+
+    border-radius:20px;
+
+    border:4px solid white;
+
+    object-fit:cover;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35);
+
+    transition:.4s;
+
+}
+
+.memory-photo:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* =========================================
+   END OF CSS
+========================================= */

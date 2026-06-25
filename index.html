@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<div id="hearts"></div>
+
+<div id="confetti"></div>
+
+<div id="progress">
+
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+</div>
+
+<!-- ===================== -->
+<!-- Welcome -->
+<!-- ===================== -->
+
+<section class="scene active"
+         id="welcome">
+
+    <div class="card">
+
+        <h1>
+
+            Happy Birthday ❤️
+
+        </h1>
+
+        <h2>
+
+            Dear Didi
+
+        </h2>
+
+        <p>
+
+            Someone prepared
+
+            <br>
+
+            a magical adventure
+
+            <br>
+
+            just for you...
+
+        </p>
+
+        <button id="startBtn">
+
+            🚪 Begin
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- Gift -->
+<!-- ===================== -->
+
+<section class="scene"
+         id="giftScene">
+
+    <div class="card">
+
+        <h2>
+
+            🎁 Gift Room
+
+        </h2>
+
+        <div id="gift">
+
+            🎁
+
+        </div>
+
+        <p id="giftMessage">
+
+            Tap the gift.
+
+        </p>
+
+        <button id="giftNext">
+
+            Continue →
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- Letter -->
+<!-- ===================== -->
+
+<section class="scene"
+         id="letterScene">
+
+    <div class="card">
+
+        <h2>
+
+            💌 Secret Letter
+
+        </h2>
+
+        <div id="letter">
+
+        </div>
+
+        <button id="letterNext">
+
+            Continue →
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- Cake -->
+<!-- ===================== -->
+
+<section class="scene"
+         id="cakeScene">
+
+    <div class="card">
+
+        <h2>
+
+            🎂 Cake Celebration
+
+        </h2>
+
+        <div id="cake">
+
+            🎂
+
+        </div>
+
+        <p>
+
+            Tap the cake
+
+        </p>
+
+        <button id="cakeNext">
+
+            Continue →
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- Wishes -->
+<!-- ===================== -->
+
+<section class="scene"
+         id="wishScene">
+
+    <div class="card">
+
+        <h2>
+
+            🌌 Starry Sky
+
+        </h2>
+
+        <div id="wishBox">
+
+            <button class="wish">
+
+                ⭐
+
+            </button>
+
+            <button class="wish">
+
+                ⭐
+
+            </button>
+
+            <button class="wish">
+
+                ⭐
+
+            </button>
+
+            <button class="wish">
+
+                ⭐
+
+            </button>
+
+        </div>
+
+        <p id="wishText">
+
+            Tap a star.
+
+        </p>
+
+        <button id="wishNext">
+
+            Final Surprise →
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- Finale -->
+<!-- ===================== -->
+
+<section class="scene"
+         id="finalScene">
+
+    <canvas id="fireworks">
+
+    </canvas>
+
+    <div class="card final">
+
+        <h1>
+
+            Happy Birthday ❤️
+
+        </h1>
+
+        <h2>
+
+            My Wonderful Sister
+
+        </h2>
+
+        <p>
+
+            Thank you
+
+            <br>
+
+            for every smile,
+
+            <br>
+
+            every lesson,
+
+            <br>
+
+            and every memory.
+
+            <br><br>
+
+            I hope this year
+
+            <br>
+
+            brings you endless happiness.
+
+            <br><br>
+
+            ❤️
+
+        </p>
+<img
+    src="assets/us.jpg"
+    alt="Us Together"
+    class="memory-photo">
+
+<h3>
+
+    Made with ❤️
+
+    <br>
+
+    — Anand
+
+</h3>
+
+        <button id="restart">
+
+            🎉 Replay
+
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
