@@ -298,7 +298,7 @@ function typeLetter(){
 
         i++;
 
-    },25);
+    },20);
 
 }
 

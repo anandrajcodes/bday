@@ -1069,7 +1069,17 @@ opacity:0;
     transform:scale(1.05);
 
 }
+.memory-gallery{
 
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    align-items:center;
+
+}
 /* =========================================
    END OF CSS
 ========================================= */
