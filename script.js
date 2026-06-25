@@ -1,12 +1,3 @@
-/* =====================================================
-   BIRTHDAY ADVENTURE
-   PART 3A
-===================================================== */
-
-// =======================================
-// SCENES
-// =======================================
-
 const scenes = document.querySelectorAll(".scene");
 
 const dots = document.querySelectorAll(".dot");
