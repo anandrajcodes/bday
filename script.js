@@ -506,11 +506,15 @@ wishes.forEach((star,index)=>{
 // GO TO FINAL SCENE
 // =======================================
 
+const music = document.getElementById("birthdayMusic");
+
 wishNext.addEventListener("click",()=>{
 
     showScene(5);
 
     startFireworks();
+
+    music.play();
 
 });
 
