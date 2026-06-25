@@ -255,9 +255,9 @@ I hope today brings you
 as much happiness
 as you have given to everyone around you.
 
-Happy Birthday ❤️
+Happy Birthday
 
-Love,
+From,
 Anand`;
 
 let typingStarted=false;
@@ -298,7 +298,7 @@ function typeLetter(){
 
         i++;
 
-    },35);
+    },25);
 
 }
 
