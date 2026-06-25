@@ -514,7 +514,15 @@ wishNext.addEventListener("click",()=>{
 
     startFireworks();
 
-    music.play();
+    console.log(music);
+
+music.play()
+.then(() => {
+    console.log("Music started");
+})
+.catch(err => {
+    console.error(err);
+});
 
 });
 

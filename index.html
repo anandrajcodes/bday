@@ -5,335 +5,322 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Happy Birthday ❤️</title>
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
-    <link rel="stylesheet"
-          href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div id="stars"></div>
+    <div id="stars"></div>
 
-<div id="hearts"></div>
+    <div id="hearts"></div>
 
-<div id="confetti"></div>
+    <div id="confetti"></div>
 
-<div id="progress">
+    <div id="progress">
 
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-
-</div>
-
-<!-- ===================== -->
-<!-- Welcome -->
-<!-- ===================== -->
-
-<section class="scene active"
-         id="welcome">
-
-    <div class="card">
-
-        <h1>
-
-            Happy Birthday ❤️
-
-        </h1>
-
-        <h2>
-
-            Dear Didi
-
-        </h2>
-
-        <p>
-
-            Someone prepared
-
-            <br>
-
-            a magical adventure
-
-            <br>
-
-            just for you...
-
-        </p>
-
-        <button id="startBtn">
-
-            🚪 Begin
-
-        </button>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
 
     </div>
 
-</section>
+    <!-- ===================== -->
+    <!-- Welcome -->
+    <!-- ===================== -->
 
-<!-- ===================== -->
-<!-- Gift -->
-<!-- ===================== -->
+    <section class="scene active" id="welcome">
 
-<section class="scene"
-         id="giftScene">
+        <div class="card">
 
-    <div class="card">
+            <h1>
 
-        <h2>
+                Happy Birthday ❤️
 
-            🎁 Gift Room
+            </h1>
 
-        </h2>
+            <h2>
 
-        <div id="gift">
+                Dear Didi
 
-            🎁
+            </h2>
 
-        </div>
+            <p>
 
-        <p id="giftMessage">
+                Someone prepared
 
-            Tap the gift.
+                <br>
 
-        </p>
+                a magical adventure
 
-        <button id="giftNext">
+                <br>
 
-            Continue →
+                just for you...
 
-        </button>
+            </p>
 
-    </div>
+            <button id="startBtn">
 
-</section>
-
-<!-- ===================== -->
-<!-- Letter -->
-<!-- ===================== -->
-
-<section class="scene"
-         id="letterScene">
-
-    <div class="card">
-
-        <h2>
-
-            💌 Secret Letter
-
-        </h2>
-
-        <div id="letter">
-
-        </div>
-
-        <button id="letterNext">
-
-            Continue →
-
-        </button>
-
-    </div>
-
-</section>
-
-<!-- ===================== -->
-<!-- Cake -->
-<!-- ===================== -->
-
-<section class="scene"
-         id="cakeScene">
-
-    <div class="card">
-
-        <h2>
-
-            🎂 Cake Celebration
-
-        </h2>
-
-        <div id="cake">
-
-            🎂
-
-        </div>
-
-        <p>
-
-            Tap the cake
-
-        </p>
-
-        <button id="cakeNext">
-
-            Continue →
-
-        </button>
-
-    </div>
-
-</section>
-
-<!-- ===================== -->
-<!-- Wishes -->
-<!-- ===================== -->
-
-<section class="scene"
-         id="wishScene">
-
-    <div class="card">
-
-        <h2>
-
-            🌌 Starry Sky
-
-        </h2>
-
-        <div id="wishBox">
-
-            <button class="wish">
-
-                ⭐
-
-            </button>
-
-            <button class="wish">
-
-                ⭐
-
-            </button>
-
-            <button class="wish">
-
-                ⭐
-
-            </button>
-
-            <button class="wish">
-
-                ⭐
+                🚪 Begin
 
             </button>
 
         </div>
 
-        <p id="wishText">
+    </section>
 
-            Tap a star.
+    <!-- ===================== -->
+    <!-- Gift -->
+    <!-- ===================== -->
 
-        </p>
+    <section class="scene" id="giftScene">
 
-        <button id="wishNext">
+        <div class="card">
 
-            Final Surprise →
+            <h2>
 
-        </button>
+                🎁 Gift Room
 
-    </div>
+            </h2>
 
-</section>
+            <div id="gift">
 
-<!-- ===================== -->
-<!-- Finale -->
-<!-- ===================== -->
+                🎁
 
-<section class="scene"
-         id="finalScene">
+            </div>
 
-    <canvas id="fireworks">
+            <p id="giftMessage">
 
-    </canvas>
+                Tap the gift.
 
-    <div class="card final">
+            </p>
 
-        <h1>
+            <button id="giftNext">
 
-            Happy Birthday ❤️
+                Continue →
 
-        </h1>
+            </button>
 
-        <h2>
+        </div>
 
-            My Wonderful Sister
+    </section>
 
-        </h2>
+    <!-- ===================== -->
+    <!-- Letter -->
+    <!-- ===================== -->
 
-        <p>
+    <section class="scene" id="letterScene">
 
-            Thank you
+        <div class="card">
 
-            <br>
+            <h2>
 
-            for every smile,
+                 Secret Letter
 
-            <br>
+            </h2>
 
-            every lesson,
+            <div id="letter">
 
-            <br>
+            </div>
 
-            and every memory.
+            <button id="letterNext">
 
-            <br><br>
+                Continue →
 
-            I hope this year
+            </button>
 
-            <br>
+        </div>
 
-            brings you endless happiness.
+    </section>
 
-            <br><br>
+    <!-- ===================== -->
+    <!-- Cake -->
+    <!-- ===================== -->
 
-            ❤️
+    <section class="scene" id="cakeScene">
 
-        </p>
-<img
-    src="assets/us.jpg"
-    alt="Us Together"
-    class="memory-photo">
+        <div class="card">
 
-<h3>
+            <h2>
 
-    Made with ❤️
+                🎂 Cake Celebration
 
-    <br>
+            </h2>
 
-    — Anand
+            <div id="cake">
 
-</h3>
+                🎂
 
-        <button id="restart">
+            </div>
 
-            🎉 Replay
+            <p>
 
-        </button>
+                Tap the cake
 
-    </div>
+            </p>
 
-</section>
+            <button id="cakeNext">
 
-<script src="script.js"></script>
-<audio id="birthdayMusic">
-    <source src="assets/music.mp3" type="audio/mpeg">
-</audio>
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- Wishes -->
+    <!-- ===================== -->
+
+    <section class="scene" id="wishScene">
+
+        <div class="card">
+
+            <h2>
+
+                🌌 Starry Sky
+
+            </h2>
+
+            <div id="wishBox">
+
+                <button class="wish">
+
+                    ⭐
+
+                </button>
+
+                <button class="wish">
+
+                    ⭐
+
+                </button>
+
+                <button class="wish">
+
+                    ⭐
+
+                </button>
+
+                <button class="wish">
+
+                    ⭐
+
+                </button>
+
+            </div>
+
+            <p id="wishText">
+
+                Tap a star.
+
+            </p>
+
+            <button id="wishNext">
+
+                Final Surprise →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- Finale -->
+    <!-- ===================== -->
+
+    <section class="scene" id="finalScene">
+
+        <canvas id="fireworks">
+
+        </canvas>
+
+        <div class="card final">
+
+            <h1>
+
+                Happy Birthday ❤️
+
+            </h1>
+
+            <h2>
+
+                My Wonderful Sister
+
+            </h2>
+
+            <p>
+
+                Thank you
+
+                <br>
+
+                for every smile,
+
+                <br>
+
+                every lesson,
+
+                <br>
+
+                and every memory.
+
+                <br><br>
+
+                I hope this year
+
+                <br>
+
+                brings you endless happiness.
+
+                <br><br>
+
+                ❤️
+
+            </p>
+            <img src="assets/us.jpg" alt="Us Together" class="memory-photo">
+
+            <h3>
+
+                Made with ❤️
+
+                <br>
+
+                — Anand
+
+            </h3>
+
+            <button id="restart">
+
+                🎉 Replay
+
+            </button>
+
+        </div>
+
+    </section>
+
+    
+    <audio id="birthdayMusic">
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
 
 </body>
 
