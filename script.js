@@ -255,9 +255,9 @@ I hope today brings you
 as much happiness
 as you have given to everyone around you.
 
-Happy Birthday
+Happy Birthday Didi
 
-From,
+By
 Anand`;
 
 let typingStarted=false;
